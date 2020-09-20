@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="piano">
+    <output-path>$PROJECT_DIR$/out/artifacts/piano</output-path>
+    <root id="root">
+      <element id="archive" name="piano.jar">
+        <element id="module-output" name="piano" />
+      </element>
+    </root>
+  </artifact>
+</component>
