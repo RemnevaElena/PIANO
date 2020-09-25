@@ -10,12 +10,6 @@ import java.util.concurrent.Executors;
 public class controller {
 
         @FXML
-        private ResourceBundle resources;
-
-        @FXML
-        private URL location;
-
-        @FXML
         private Button c;
 
         @FXML

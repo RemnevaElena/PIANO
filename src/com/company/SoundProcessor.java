@@ -67,7 +67,7 @@ public class SoundProcessor {
 
             channels[0].noteOn(note, 100);
             try {
-                Thread.sleep(7000);
+                Thread.sleep(4000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
