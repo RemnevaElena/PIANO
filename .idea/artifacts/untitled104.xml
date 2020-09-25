@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="untitled104">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled104</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.company.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="untitled104.jar">
+        <element id="module-output" name="untitled104" />
+      </element>
+    </root>
+  </artifact>
+</component>
