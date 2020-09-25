@@ -49,9 +49,6 @@ public class SoundProcessor {
                     return;
                 case "aShrp":
                     play(70);
-                    return;
-                default:
-                    return;
             }
         }
 
