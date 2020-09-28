@@ -10,9 +10,10 @@ public class Main extends Application {
 
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/company/view.fxml"));
         primaryStage.setTitle("pianoApp");
-        primaryStage.setScene(new Scene(root, 750, 450));
+        Scene scene = new Scene(root, 750, 450);
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
