@@ -11,6 +11,11 @@ public class SoundProcessor {
         private String s;
         MidiChannel[] channels;
 
+        private int volume;
+        public void setVolumeLevel(int level) {
+            this.volume = level;
+        }
+
         public void setNoteAndPlay(String s) {
             this.s = s;
             switch (s) {
@@ -61,8 +66,7 @@ public class SoundProcessor {
             }
             channels = synth.getChannels();
             channels[0].programChange(1);
-
-            channels[0].noteOn(note, 100);
+            channels[0].noteOn(note, volume);
             try {
                 Thread.sleep(4000);
             } catch (InterruptedException e) {

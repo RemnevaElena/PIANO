@@ -2,6 +2,7 @@ package com.company;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Slider;
 import javafx.scene.layout.AnchorPane;
 
 import java.util.concurrent.ExecutorService;
@@ -49,10 +50,14 @@ public class controller {
     private AnchorPane anchorPane;
 
     @FXML
+    private Slider volume;
+
+    @FXML
     void initialize() {
         SoundProcessor sound = new SoundProcessor();
         ExecutorService pool = Executors.newCachedThreadPool();
-
+        sound.setVolumeLevel(127);
+        volume.valueProperty().addListener((observable, oldValue, newValue) -> sound.setVolumeLevel(newValue.intValue()));
         anchorPane.setOnKeyPressed(event -> {
             switch (event.getCode()) {
                 case C:
